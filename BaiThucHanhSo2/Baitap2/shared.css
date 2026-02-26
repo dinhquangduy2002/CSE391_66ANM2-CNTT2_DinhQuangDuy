@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* HEADER: Sát lề hơn và không có viền cho menu */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 5%; /* Tăng padding trên dưới để thoáng hơn */
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+}
+
+#page-logo a {
+    font-family: 'Oleo Script', cursive;
+    color: #ffeb3b;
+    font-size: 2.5rem;
+    text-decoration: none;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffeb3b;
+    font-weight: 500;
+    font-size: 1.1rem;
+    /* Đã bỏ border ở đây */
+}
+
+/* FOOTER: Giữ nguyên Flexbox căn giữa */
+footer {
+    background-color: #000;
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+footer ul {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+
+footer img {
+    width: 35px;
+    height: 35px;
+}

@@ -1,0 +1,56 @@
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+.contact-box {
+    width: 100%;
+    max-width: 900px;
+    border: 1px solid #333;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.flex-row {
+    display: flex;
+    gap: 20px;
+}
+
+.flex-row input {
+    flex: 1;
+}
+
+.flex-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+input, textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+button {
+    background-color: #81D4FA;
+    border: 1px solid #4FC3F7;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+span {
+    color: #888;
+    font-size: 14px;
+}
