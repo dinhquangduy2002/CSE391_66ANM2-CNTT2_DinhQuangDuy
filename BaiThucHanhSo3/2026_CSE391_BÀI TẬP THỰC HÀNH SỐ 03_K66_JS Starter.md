@@ -427,10 +427,13 @@ $("#btnHello").on("click", function () {
 
 > Câu hỏi:
 > - Điểm giống nhau về chức năng giữa 2 đoạn code trên là gì?
+> - Cả hai đoạn code đều dùng để chọn phần tử trong DOM và xử lý sự kiện (event) như click, change,...) trên trang web
 > - Điểm khác nhau về cú pháp là gì (`document.getElementById` vs `$("#id")`, `addEventListener` vs `.on`)?
+>   - Chọn phần tử: document.getElementById("id") bắt sự kiện: addEventListener("click", function(){})
+>   - Chọn phần tử: $("#id") bắt sự kiện: .on("click", function(){})
 > - Em hãy tra cứu nhanh “What is jQuery used for?” và ghi 2 ý chính:
->   1. ................................................................
->   2. ................................................................
+>   1. Đơn giản hóa việc thao tác DOM
+>   2. Xử lý sự kiện và hiệu ứng trên trang web dễ dàng hơn so với JavaScript thuần.
 
 ---
 
@@ -439,9 +442,9 @@ $("#btnHello").on("click", function () {
 > 1. Sau buổi lab, em tò mò nhất về phần nào của JavaScript/DOM?
 > 2. Em muốn tự làm thêm tính năng gì trên trang web (vd: bộ đếm, đổi theme, pop-up, mini game, …)?
 > 3. Em đánh giá mức độ hiểu của mình về:
->    - Biến \& kiểu dữ liệu: [ ] Chưa hiểu  [ ] Tạm ổn  [ ] Khá rõ
->    - If/else \& hàm:       [ ] Chưa hiểu  [ ] Tạm ổn  [ ] Khá rõ
->    - DOM \& sự kiện:       [ ] Chưa hiểu  [ ] Tạm ổn  [ ] Khá rõ
+>    - Biến \& kiểu dữ liệu: [ ] Chưa hiểu  [ ] Tạm ổn  [x] Khá rõ
+>    - If/else \& hàm:       [ ] Chưa hiểu  [ ] Tạm ổn  [x] Khá rõ
+>    - DOM \& sự kiện:       [ ] Chưa hiểu  [x] Tạm ổn  [ ] Khá rõ
 
 ---
 
