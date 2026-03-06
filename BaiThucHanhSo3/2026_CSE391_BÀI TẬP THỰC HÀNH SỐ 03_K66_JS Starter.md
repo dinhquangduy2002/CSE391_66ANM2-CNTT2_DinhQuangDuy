@@ -388,10 +388,10 @@ nameInput.addEventListener("input", function () {
 >
 > Em hãy:
 > - Tự mô tả DOM bằng lời của em:
->   DOM là cấu trúc dạng cây của trang HTML, trong đó mỗi thẻ HTML được biểu diễn thành một đối tượng để JavaScript có thể truy cập, 
-> - thay đổi nội dung, thuộc tính hoặc thêm/xóa phần tử trên trang web
-> - Nêu 1 ví dụ “thao tác DOM” trong bài (ghi lại 1 dòng lệnh cụ thể).
-    document.querySelector("h1").textContent = "Xin chào";
+> - DOM là cấu trúc dạng cây của trang HTML, trong đó mỗi thẻ HTML được biểu diễn thành một đối tượng để JavaScript có thể truy cập, 
+> - Thay đổi nội dung, thuộc tính hoặc thêm/xóa phần tử trên trang web
+> - Nêu 1 ví dụ “thao tác DOM” trong bài (ghi lại 1 dòng lệnh cụ thể). 
+> - document.querySelector("h1").textContent = "Xin chào";
 ---
 
 #### Bước 5: Ảnh kết quả
