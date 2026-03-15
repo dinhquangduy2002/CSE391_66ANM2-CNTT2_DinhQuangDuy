@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Đặt Hàng Nâng Cao</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>ĐƠN ĐẶT HÀNG</h2>
+    <form id="orderForm">
+        <div class="form-group">
+            <label>Sản phẩm:</label>
+            <select id="product">
+                <option value="">-- Chọn sản phẩm --</option>
+                <option value="laptop">Laptop Gaming (25.000.000đ)</option>
+                <option value="phone">iPhone 15 Pro (28.000.000đ)</option>
+                <option value="keyboard">Bàn phím cơ (1.200.000đ)</option>
+                <option value="mouse">Chuột không dây (500.000đ)</option>
+            </select>
+            <span class="error-msg" id="err-product"></span>
+        </div>
+
+        <!-- Số lượng -->
+        <div class="form-group">
+            <label>Số lượng (1-99):</label>
+            <input type="number" id="quantity" placeholder="Nhập số lượng...">
+            <span class="error-msg" id="err-quantity"></span>
+        </div>
+
+        <!-- Thành tiền -->
+        <div class="total-box">
+            Tổng tiền: <span id="total-price">0đ</span>
+        </div>
+
+        <div class="form-group">
+            <label>Ngày giao hàng:</label>
+            <input type="date" id="deliveryDate">
+            <span class="error-msg" id="err-deliveryDate"></span>
+        </div>
+
+        <div class="form-group">
+            <label>Địa chỉ giao hàng:</label>
+            <textarea id="address" rows="2" placeholder="Ít nhất 10 ký tự..."></textarea>
+            <span class="error-msg" id="err-address"></span>
+        </div>
+
+        <div class="form-group">
+            <label>Ghi chú (Tùy chọn):</label>
+            <textarea id="note" rows="3" placeholder="Ghi chú thêm..."></textarea>
+            <div id="char-count">0/200</div>
+            <span class="error-msg" id="err-note"></span>
+        </div>
+
+        <div class="form-group">
+            <label>Phương thức thanh toán:</label>
+            <div class="radio-group">
+                <input type="radio" name="payment" value="COD" id="pay1"> <label for="pay1">COD</label>
+                <input type="radio" name="payment" value="Chuyển khoản" id="pay2"> <label for="pay2">Chuyển khoản</label>
+                <input type="radio" name="payment" value="Ví điện tử" id="pay3"> <label for="pay3">Ví điện tử</label>
+            </div>
+            <span class="error-msg" id="err-payment"></span>
+        </div>
+
+        <button type="submit" id="btnSubmit">Đặt hàng ngay</button>
+    </form>
+</div>
+
+<div id="confirmModal" class="modal">
+    <div class="modal-content">
+        <h3>XÁC NHẬN ĐƠN HÀNG</h3>
+        <div id="summary"></div>
+        <p><strong>Xác nhận đặt hàng?</strong></p>
+        <div class="modal-buttons">
+            <button id="btnConfirm" class="btn-primary">Xác nhận</button>
+            <button id="btnCancel" class="btn-secondary">Hủy</button>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

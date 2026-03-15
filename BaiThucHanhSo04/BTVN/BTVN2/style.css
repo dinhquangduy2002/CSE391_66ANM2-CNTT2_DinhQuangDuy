@@ -1,0 +1,102 @@
+:root {
+    --primary: #2563eb;
+    --bg: #f1f5f9;
+    --text: #1e293b;
+    --border: #e2e8f0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.form-container {
+    background: white;
+    width: 100%;
+    max-width: 450px;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+}
+
+.progress-wrapper { margin-bottom: 2rem; }
+.progress-info {
+    display: flex; justify-content: space-between;
+    font-size: 0.875rem; font-weight: 600; color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+.progress-track {
+    background: var(--border);
+    height: 8px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.progress-bar {
+    background: var(--primary);
+    height: 100%; width: 33.33%;
+    transition: 0.3s; }
+
+.step { display: none; }
+.step.active { display: block; animation: fadeIn 0.4s; }
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(5px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+h2 { margin-bottom: 1.5rem; font-size: 1.25rem; color: var(--text); }
+.form-group { margin-bottom: 1.2rem; }
+label { display: block; font-size: 0.875rem; font-weight: 500; margin-bottom: 0.4rem; }
+input, select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    outline: none;
+    box-sizing: border-box;
+}
+input:focus { border-color: var(--primary); }
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem; }
+.btn {
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer; }
+.btn-next {
+    background: var(--primary);
+    color: white; }
+.btn-next:disabled {
+    background: #cbd5e1;
+    cursor: not-allowed;
+}
+.btn-prev {
+    background: #f1f5f9;
+    color: #64748b;
+}
+.btn-submit {
+    background: #10b981;
+    color: white;
+    display: none;
+}
+
+.summary-box {
+    background: #f8fafc;
+    padding: 1rem;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    line-height: 1.8;
+}
+.error-msg {
+    color: #ef4444;
+    font-size: 0.75rem;
+}
